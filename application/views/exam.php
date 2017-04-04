@@ -30,7 +30,6 @@
 					</h3>
 				</div>
 				<div class="panel-body">
-					<?php echo count($exam); ?>
 					<?php echo form_open(uri_string()); ?>
           <?php echo form_hidden('id',$profile['id']); ?>
           <?php echo form_hidden('topic_id',$this->uri->segment(2)); ?>
@@ -50,8 +49,7 @@
 					<?php } ?>
 					<?php	echo form_fieldset_close().hr(); ?>
 					<div class="form-group pull-right">
-						<?php echo form_submit('','ยืนยัน',array('class'=>'btn btn-success')); ?>
-						<?php echo form_reset('','ยกเลิก',array('class'=>'btn btn-warning')); ?>
+						<?php echo form_submit('','ยืนยัน',array('class'=>'btn btn-success')); ?> <?php echo form_reset('','ยกเลิก',array('class'=>'btn btn-warning')); ?>
 					</div>
 					<?php echo form_close(); ?>
 				</div>
